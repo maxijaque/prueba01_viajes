@@ -1,5 +1,26 @@
 body {
     background-color: black;
     color: white;
-    font-family: "Nunito";
+    font-family: "Nunito", sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+#logo-viajes {
+    padding: 0px 0px 7px 0px;
+}
+
+.card-img-top {
+    height: 150px;
+
+}
+
+.card {
+    padding: 0;
+    height: 95%;
+}
+
+.carousel-item img {
+    height: 60rem;
 }
