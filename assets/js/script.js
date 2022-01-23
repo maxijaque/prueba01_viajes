@@ -1,5 +1,8 @@
 $(function () {
 
+    $("#enviar").click(function(){
+        alert("El mensaje ha sido enviado exitosamente")
+    })
 
     $("a").click(function () {
 
