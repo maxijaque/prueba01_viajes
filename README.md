@@ -4,10 +4,6 @@
 
 Corresponde al desarollo de la primera evaluación del Bootcamp Desarrollador Full Stack en Python realizado por Edutecno
 
-# Capturas de pantalla
-
-![foto_viaje_chile.png](assets\img\foto_viajes_chile.png)
-
 # Como utilizar su software
 
 Se debe abrir en algún navegador web
@@ -19,6 +15,8 @@ Se debe abrir en algún navegador web
 - Bootstrap
 - JS
 - JQuery
+- GoogleFont
+- FontAwesome
 
 # Autor
 
