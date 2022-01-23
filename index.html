@@ -21,8 +21,8 @@
 </head>
 
 <body>
-	<!-- Carousel y Nav -->
-	<nav id="navegador" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+	<!-- Nav -->
+	<nav  class="navbar navbar-expand-lg navbar-dark  fixed-top">
 		<div class="container">
 			<div>
 				<img id="logo-viajes" src="assets\img\viajes.svg" alt="logo" height="35">
@@ -47,7 +47,7 @@
 			</div>
 		</div>
 	</nav>
-
+	<!-- Carousel -->
 	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
@@ -74,7 +74,7 @@
 	</section>
 	<!-- Sección ¿QUIÉNES SOMOS? - Article-->
 	<section id="quienes-somos">
-		<div class="container">
+		<div class="container d-none d-md-block">
 
 			<div class="pt-5">
 				<h4 class="text-center border-bottom border-secondary pb-4">¿QUIÉNES SOMOS?</h4>
@@ -194,7 +194,25 @@
 					<label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
 					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 				</div>
-				<button type="submit" class="btn btn-info text-white">Enviar</button>
+				<button id="enviar" type="submit" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+						<div class="modal-header border-secondary">
+							<img id="logo-viajes" src="assets\img\viajes.svg" alt="logo" height="35">
+						  	<h5 class="modal-title ms-2" id="exampleModalLabel">VIAJES CHILE</h5>
+						  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body ">
+							<p>El mensaje ha sido enviado correctamente</p>
+						</div>
+						<div class="modal-footer border-secondary">
+						  <button type="button" class="btn btn-info text-white" data-bs-dismiss="modal">Aceptar</button>
+						
+						</div>
+					  </div>
+					</div>
+				  </div>
 			</form>
 		</div>
 
@@ -208,20 +226,23 @@
 				</div>
 
 				<div class="col-12 col-sm-6 flex-fill  text-center">
-					<a href="https://github.com/maxijaque" class="text-white"><i
+					<a href="https://github.com/maxijaque" data-bs-toggle="tooltip" data-bs-placement="top"
+						title="Presione para ingresar a github" class="text-white"><i
 							class="fab fa-github-square fa-2x px-2 py-3"></i></a>
 					<a href="https://www.linkedin.com/in/maximiliano-jaque-fern%C3%A1ndez-13a69718a/"
+						data-bs-toggle="tooltip" data-bs-placement="top" title="Presione para ingresar a linkedin"
 						class="text-white"><i class="fab fa-linkedin fa-2x  px-2 py-3"></i></a>
-					<a href="#" class="text-white"><i class="fab fa-twitter-square fa-2x  px-2 py-3"></i></a>
-					<a href="https://www.facebook.com/profile.php?id=100007205415608" class="text-white"><i
+					<a href="https://twitter.com" data-bs-toggle="tooltip" data-bs-placement="top"
+					title="Presione para ingresar a twitter" class="text-white"><i class="fab fa-twitter-square fa-2x  px-2 py-3"
+							"></i></a>
+					<a href="https://www.facebook.com/profile.php?id=100007205415608" data-bs-toggle="tooltip"
+						data-bs-placement="top" title="Presione para ingresar a facebook" class="text-white"><i
 							class="fab fa-facebook-square fa-2x  px-2 py-3"></i></a>
 				</div>
 			</div>
 		</div>
 
 	</footer>
-
-
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"
 		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

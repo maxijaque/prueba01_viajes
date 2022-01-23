@@ -24,3 +24,12 @@ body {
 .carousel-item img {
     height: 60rem;
 }
+
+.modal-content {
+    background-color: black !important;
+}
+
+.nav-black {
+    background-color: black !important;
+
+}
